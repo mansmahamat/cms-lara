@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Bienvenue sur Laravel CMS</h1>
-    <p>Un petit CMS simple</p>
+    <h1 class="text-center">Bienvenue sur Laravel Football</h1>
+    <p class="text-center mb-5">Toutes les actualités</p>
+    <img class="container" src="{{ URL::to('/assets/img/football.svg') }}" alt="">
 @endsection
