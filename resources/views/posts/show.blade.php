@@ -3,6 +3,10 @@
 @section('content')
         <div class="jumbotron">
             <h3 class="display-4 mb-4 ">{{ $posts->title }} </h3>
+            @if ($posts->cover_image != 'no_image.jpg')
+            <img width="100%" src='/storage/cover_image/{{ $posts->cover_image }}' alt="image">
+            @endif
+           
             <p class="lead">{!! $posts->body !!}</p>
 
             <small>Ecrit le : {{ $posts->created_at->format('d-m-Y H:m') }} par {{ $posts->user->name  }}</small>

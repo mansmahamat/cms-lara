@@ -15,6 +15,9 @@
         </li>
         @else
         <li class="nav-item active">
+          <a class="nav-link" href="/">Accueil</a>
+        </li> 
+        <li class="nav-item active">
           <a class="nav-link" href="/home">Dashboard</a>
         </li> 
         <li class="nav-item active">
@@ -40,7 +43,7 @@
               <li class="nav-item ">
                   <a class="nav-link " href="{{ route('logout') }}" onclick="event.preventDefault();
                   document.getElementById('logout-form').submit();">
-                      {{ Auth::user()->name }} {{ __('Logout') }}
+                      {{ Auth::user()->name }} {{ __('Déconnexion') }}
                   </a>
                   <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf

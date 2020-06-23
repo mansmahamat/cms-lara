@@ -14,8 +14,8 @@
                         </div>
                     @endif
 
-                    <h4>Créer un article</h4>
-                    <a href="/posts/create" class="btn btn-outline-primary mb-5">Créer</a>
+                    
+                    <a href="/posts/create" class="btn btn-outline-primary mb-5 h4">Créer un article</a>
 
                     @if (count($posts) > 0 )
                     <table class="table table-hover">

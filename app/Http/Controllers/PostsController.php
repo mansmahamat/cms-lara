@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Post;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+
 
 class PostsController extends Controller
 {
@@ -111,9 +113,21 @@ class PostsController extends Controller
             'body' => 'required'
         ]);
 
+
+        if($request->hasFile('cover_image')){
+            $filenameWithExt = $request->file('cover_image')->getClientOriginalName();
+            $filename = \pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('cover_image')->getClientOriginalExtension();
+            $filenameToStore = $filename.'_'.time().'.'.$extension  ;
+            $path = $request->file('cover_image')->storeAs('public/cover_image', $filenameToStore);
+
+        }
+
         $post = Post::find($id);
         $post->title = $request->input('title');
-        
+        if($request->hasFile('cover_image')){
+            $post->cover_image = $filenameToStore;
+        }
         $post->body = $request->input('body');
         $post->save();
 
@@ -132,6 +146,10 @@ class PostsController extends Controller
 
         if(auth()->user()->id !== $post->user_id){
             return redirect('posts')->with('error', 'Vous n\'êtes pas autoriser à supprimer cette page !!!');
+        }
+
+        if($post->cover_image != 'no_image.jpg'){
+            Storage::delete('public/cover_image/'.$post->cover_image);
         }
 
         $post->delete();
