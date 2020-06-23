@@ -7,7 +7,7 @@
         <div class="jumbotron">
             <h3 class="display-4 "><a class="text-danger" href="{{ url('/posts', $post->id) }}">{{ $post->title }}... <small>(lire la suite)</small></a> </h3>
 
-            <small>Date : {{ $post->created_at->format('d-m-Y') }}</small>
+            <small>Date : {{ $post->created_at->format('d-m-Y') }} par {{ $post->user->name  }} </small>
           </div>
         @endforeach
         {{ $posts->links() }}
