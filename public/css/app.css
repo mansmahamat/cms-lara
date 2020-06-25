@@ -17,3 +17,40 @@
     background-image:url('https://i.ibb.co/LJ2XLmy/alex-motoc-7-Nh-Fr-Pxlg-M8-unsplash.jpg');
 }
 
+figure img {
+    width: 100% !important;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.page-link {
+    color: #dc3545;
+
+}
+
+#show {
+    font-size: 20px;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: limegreen;
+    background-color: #32cd32;
+}
+
+.custom-switch .custom-control-label::after {
+    background-color: limegreen;
+}
+
+#text {
+    color: yellow;
+}
+
+#cookie_law_notification ::before{
+    content: '🍪';
+
+}

@@ -59,6 +59,8 @@ class PostsController extends Controller
             $filenameToStore = 'no_image.jpg';
         }
 
+        
+
         $post = new Post();
         $post->title = $request->input('title');
         $post->body = $request->input('body');

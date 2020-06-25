@@ -5,7 +5,9 @@
 
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>Laravel Football</h3>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+            <p>
+              Laravel Foot est un journal quotidien footballistique français, propriété du Groupe ZZ. Créé le 22 Juin 1993 par Zinédine Zidane pour succéder à Futbol, L’Équipe a notamment est aujourd'hui le quotidien sportif le plus populaire.
+            </p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">

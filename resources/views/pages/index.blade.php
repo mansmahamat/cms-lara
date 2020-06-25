@@ -32,12 +32,12 @@
     <!-- Content Row -->
     <div class="row">
       <div class="col-md-4 mb-5">
-        <div class="card h-100">
+        <div class="card border-danger border h-100">
           <div class="card-body">
             <h2 class="card-title text-center">
                 <img src="{{ URL::to('/assets/img/money.png') }}" alt="" srcset="">
             </h2>
-            <p class="card-text">
+            <p class="card-text text-dark">
                 Gardez votre argent Laravel Football est totalement gratuit !
             </p>
           </div>
@@ -46,12 +46,12 @@
       </div>
       <!-- /.col-md-4 -->
       <div class="col-md-4 mb-5">
-        <div class="card h-100">
+        <div class="card border-danger border h-100">
           <div class="card-body">
-            <h2 class="card-title text-center">
+            <h2 class="card-title text-center text-dark">
                 <img src="{{ URL::to('/assets/img/phone.png') }}" alt="phone">
             </h2>
-            <p class="card-text">
+            <p class="card-text text-dark">
                 Laravel Football est accessible sur smartphone, tablette & ordinateur.
             </p>
           </div>
@@ -60,12 +60,12 @@
       </div>
       <!-- /.col-md-4 -->
       <div class="col-md-4 mb-5">
-        <div class="card h-100">
+        <div class="card border-danger border h-100">
           <div class="card-body">
             <h2 class="card-title text-center">
                 <img src="{{ URL::to('/assets/img/live-news.png') }}" alt="" srcset="">
             </h2>
-            <p class="card-text">
+            <p class="card-text text-dark">
                 L'actualité en live & en continu 24h/24h
             </p>
           </div>
