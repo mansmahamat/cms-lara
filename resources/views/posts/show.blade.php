@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-        <div class="jumbotron">
-            <h3 class="display-4 mb-4 text-dark ">{{ $posts->title }} </h3>
+        <div class="jumbotron bg-danger">
+            <h3 class="display-4 mb-4 text-white ">{{ $posts->title }} </h3>
             {{-- @if ($posts->cover_image != 'no_image.jpg')
             <img width="100%" src='/storage/cover_image/{{ $posts->cover_image }}' alt="image">
             @endif --}}
            
-            <span id="show" class="text-dark font-weight-lighter" width="100%">{!! $posts->body !!}</span>
+            <span id="show" class="text-white font-weight-lighter" width="100%">{!! $posts->body !!}</span>
 
-            <small class="text-dark">Ecrit le : {{ $posts->created_at->format('d-m-Y H:m') }} par {{ $posts->user->name  }}</small>
+            <small class="text-white">Ecrit le : {{ $posts->created_at->format('d-m-Y H:m') }} par {{ $posts->user->name  }}</small>
           </div>
           <a href="/posts" class="btn btn-outline-primary mb-5">Retour aux articles</a>
         

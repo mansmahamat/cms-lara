@@ -4,9 +4,14 @@
 <div id="banner-home" class="banner ">
 	<div class="container">
 	<div class="banner-text">
-	    <div class="h1 ">
+	    <div class="h1">
             @if (Auth::user())
-                Heureux de vous revoir {{ Auth::user()->name }} 
+                <p>Heureux de vous revoir {{ Auth::user()->name }} </p>
+                  
+             @else
+            
+             <p class="">Bienvenue sur Laravel Foot ⚽</p>
+
             @endif
             
 	    </div>
